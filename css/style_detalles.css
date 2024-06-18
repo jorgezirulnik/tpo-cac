@@ -33,13 +33,14 @@ h3 {
 }
 
 .buttons {
-    position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    bottom: 190px;
-    gap: 10px;
-}
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        bottom: 50px;
+        gap: 10px;
+    }
+    
 
 .buttons label {
     width: 20px;
@@ -92,7 +93,7 @@ h3 {
 .thirdslide {
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: calc(100% - 50px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -111,7 +112,7 @@ h3 {
 .thirdslideT {
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: calc(100% - 50px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -131,7 +132,7 @@ h3 {
 .thirdslideV {
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: calc(100% - 50px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -150,7 +151,7 @@ h3 {
 .thirdslideCI {
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: calc(100% - 50px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -168,14 +169,14 @@ h3 {
 .firstslideC,
 .secondslideC,
 .thirdslideC {
-    position: relative;
+    position:relative;
     width: 100vw;
-    height: 100vh;
-    display: flex;
+    height: calc(100% - 50px);
+    display:flex;
     justify-content: center;
     align-items: center;
-}
-
+   
+ }
 .slider {
     position: relative;
     overflow-x: hidden;
@@ -188,4 +189,8 @@ a:hover {
     transform: scale(1.2);
     transition: color 0.3s ease, transform 0.3s ease;
     /*Animacion de link*/
+}
+
+.img{
+    aspect-ratio: 16 / 9;
 }

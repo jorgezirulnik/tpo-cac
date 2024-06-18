@@ -45,4 +45,24 @@ function validarFigureTurnos() {
     return true; // Permite que el formulario se envíe
 }
 
+function validarInicioSesion() {
+    const usuario= document.getElementById('usuario').value.trim();
+    const password= document.getElementById('password').value.trim();
+    
+    let validation = true
+
+    if (!usuario) {
+        errorElement.textContent = 'Por favor ingrese el nombre de usuario.';
+        validation = false;
+    }
+    if (!password) {
+        errorElement.textContent = 'Por favor, ingresa la contraseña.';
+        validation = false; // Prevenir el envío del formulario
+
+    }
+
+    if (validation) {
+        return true; // Permitir el envío del formulario
+    } 
+}
 
